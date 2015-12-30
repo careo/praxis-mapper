@@ -8,6 +8,7 @@
 * Fixed `SystemStackError` from `IdentityMap#add_selectors` if the provided
   field hashes are self-referencing. I.e. `{author: {posts: {author: {...}}}}`
 * Fixed `SystemStackError` from `SelectorGenerator` for circular `Resource.property` definitions like `property :foo, dependencies: [:foo, :bar]`.
+* Fix Query::Sequel not working with raw SQL queries.
 
 
 ## 4.2
